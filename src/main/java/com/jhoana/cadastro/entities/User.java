@@ -18,18 +18,18 @@ public class User implements Serializable {
 	private String name;
 	private String email;
 	private String phone;
-	private String passoword;
+	private String password;
 	
-	private User() {
+	public User() {
 	}
 
-	public User(Long id, String name, String email, String phone, String passoword) {
+	public User(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
-		this.passoword = passoword;
+		this.password = password;
 	}
 
 	public Long getId() {
@@ -64,12 +64,12 @@ public class User implements Serializable {
 		this.phone = phone;
 	}
 
-	public String getPassoword() {
-		return passoword;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassoword(String passoword) {
-		this.passoword = passoword;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	@Override
